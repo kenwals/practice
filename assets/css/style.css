@@ -1,20 +1,22 @@
 :root {
-  
   --green: 93, 127, 3;
-
-  
 }
 
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(var(--green), 0.3);
 }
 
+
+
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero111_lrg.jpg");
-  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hero111_lrg.jpg");
+  height: 100vh;
+  width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,98 +48,72 @@ body, html {
   color: white;
 }
 
-hr {
-    overflow: visible; /* For IE */
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
-}
-hr:after {
-    content: "§";
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
-}
-
-
-
-
-
-
-
-
-
 
 .about-panel {
-    height:500px;
-    border:5px;
-    border-color: whitesmoke;
+  height: 500px;
+  border: 5px;
+  border-color: whitesmoke;
 
-    font-size: 2rem;
-font-weight: 900;
-line-height: 1.5;
-color: #212529;
-text-align: center;
-display: flex;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  display: flex;
 }
 
-
-.about-panel-left{
-    background-color: red;
+.about-panel-left {
+  background-color: red;
 }
 
-.about-panel-right{
-    background-color:blue;
+.about-panel-right {
+  background-color: blue;
 }
-
-
-
 
 .tile {
-    height: 40vh;
+  height: 40vh;
 }
 
-.tile1{
+.tile_section {
+  display: flex;
+  flex-direction: row;
+}
+
+.tile1 {
   background-color: rgba(var(--green), 0.8);
 }
 
-.tile2{
+.tile2 {
   background-color: rgba(var(--green), 0.7);
 }
-.tile3{
+.tile3 {
   background-color: rgba(var(--green), 0.6);
 }
-.tile4{
+.tile4 {
   background-color: rgba(var(--green), 0.5);
 }
-.tile5{
+.tile5 {
   background-color: rgba(var(--green), 0.4);
 }
-.tile6{
+.tile6 {
   background-color: rgba(var(--green), 0.3);
 }
 
-
-.footer{
-    background-color: rgb(227,215,200);
-    height: 100px;
+.footer {
+  background-color: rgb(227, 215, 200);
+  height: 100px;
 }
-
 
 ul {
   list-style-type: none;
   display: flex;
-  justify-content:space-around; 
+  flex-direction: row;
+  justify-content: space-around;
   margin: 0;
   padding-left: 20vw;
-  padding-right:20vw;
-    padding-top: 40px;
-  overflow: hidden; 
+  padding-right: 20vw;
+  padding-top: 40px;
+  overflow: hidden;
   // background-color: #333333;
 }
 
@@ -146,7 +122,6 @@ li {
 }
 
 li a {
-
   color: white;
   text-align: center;
   padding: 16px;
