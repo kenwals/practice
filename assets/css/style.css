@@ -1,5 +1,3 @@
-=
-
 body,
 html {
   height: 100%;
@@ -9,4 +7,15 @@ html {
 }
 
 
+#page-home{
+    background-color: yellowgreen;
+}
 
+
+#page-game{
+    background-color: blueviolet;
+}
+
+#page-help{
+    background-color: pink;
+}
