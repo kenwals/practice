@@ -6,16 +6,22 @@ html {
   background-color: rgba(var(--green), 0.3);
 }
 
+i{
+    font-size: 2rem;
+}
 
 #page-home{
     background-color: yellowgreen;
+    height: 100vh;
 }
 
 
 #page-game{
     background-color: blueviolet;
+    height: 100vh;
 }
 
 #page-help{
     background-color: pink;
+    height: 100vh;
 }
