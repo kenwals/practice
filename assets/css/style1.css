@@ -1,4 +1,4 @@
-header {
+#homepage-hero {
   height:180vh;
   min-height:400px;
   background-size:cover;
@@ -7,4 +7,8 @@ header {
 
 .hidden-spacer {
   height: 56px
+}
+
+.section1 {
+  background-color: rgb(69, 111, 225)
 }

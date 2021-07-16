@@ -11,13 +11,10 @@
     <title>Hello, world!</title>
   </head>
   <body>
+<div id="homepage-hero"></div>
   <header>
-
-  </header>
-  <main>
-
     <nav class="navbar navbar-expand-sm fixed-top navbar-light">
-        <div class="container">
+        <div class="container section1">
             <a class="navbar-brand" href="#">Brand</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
                 <span class="navbar-toggler-icon"></span>
@@ -39,6 +36,10 @@
             </div>
         </div>
     </nav>
+  </header>
+  <main>
+
+
     <div class="sticky-top bg-white hidden-spacer"> </div>
     <div class="container pt-5">
         <div class="row">
@@ -74,7 +75,16 @@
 
 
 
+  <script type="text/javascript">
+  const [red, green, blue] = [69, 111, 225]
+const section1 = document.querySelector('.section1')
 
+window.addEventListener('scroll', () => {
+  const y = 1 + (window.scrollY || window.pageYOffset) / 150
+  const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+  section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+})
+  </script>
 
 
 
